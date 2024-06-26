@@ -142,6 +142,14 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.hidden{
+  visibility: hidden;
+  opacity: 0;
 }
 
 .modal {
@@ -153,34 +161,41 @@ nav {
   box-sizing: border-box;
 }
 
-.modal form {
+.modal-form {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.modal label {
+.modal-label {
   margin-bottom: 5px;
 }
 
-.modal input,
-.modal textarea {
+.modal-input,
+.modal-textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-sizing: border-box;  
+  font-size: 18px;
 }
 
-.modal button {
+.modal-textarea {
+  resize: none;
+  min-height: 190px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.modal-btn {
   padding: 10px;
   background-color: var(--black);
   color: #fff;
   border: none;
   border-radius: 14px;
   cursor: pointer;
+  font-size: 35px;
 }
 
 
-/* 7.06 video */

@@ -73,22 +73,23 @@
       </div>
     </div>
 
-    <div class="overlay">
+    <div class="overlay hidden">
       <div class="modal">
-        <form action="">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required />
+        <form class="modal-form">
+          <label class="modal-label" for="name">Name</label>
+          <input class="modal-input" type="text" id="name" name="name" placeholder="Name" required />
 
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required />
+          <label class="modal-label" for="email">Email*</label>
+          <input class="modal-input" type="email" id="email" name="email" placeholder="Email" required />
 
-          <label for="message">Message</label>
-          <textarea name="message" id="message" required></textarea>
+          <label class="modal-label" for="message">Message*</label>
+          <textarea class="modal-textarea" name="message" id="message" placeholder="Message" required></textarea>
 
-          <button type="submit">Send Message</button>
+          <button class="modal-btn" type="submit">Send Message</button>
         </form>
       </div>
     </div>
 
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
